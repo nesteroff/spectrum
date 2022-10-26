@@ -20,6 +20,7 @@ build/rootfs.ext4: build/rootfs.tar
 	mv $@.tmp $@
 
 FILES = \
+	etc/asound.conf \
 	etc/dbus-1/system.conf \
 	etc/dbus-1/session.conf \
 	etc/fonts/fonts.conf \

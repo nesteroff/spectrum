@@ -16,7 +16,9 @@ chmod 666 /dev/urandom
 chmod 666 /dev/tty
 chmod 666 /dev/dri/card0
 chmod 666 /dev/dri/renderD128
-
+chmod 666 /dev/video*
+chmod 666 /dev/snd/pcm*
+chmod 666 /dev/snd/control*
 
 # /nix/store/npknxl8a5lnc451pj3c2sqbpl5qdri5a-electron-19.0.7/bin/electron --enable-features=UseOzonePlatform --ozone-platform=wayland
 
