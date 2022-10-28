@@ -92,7 +92,8 @@ let
 
   # Packages that should be fully linked into /usr,
   # (not just their bin/* files).
-  usrPackages = [ appvm pkgsGui.mesa.drivers pkgsGui.dejavu_fonts pkgs.element-desktop-wayland pkgs.chromium pkgs.alsa-utils ];
+  usrPackages = [ appvm pkgsGui.mesa.drivers pkgsGui.dejavu_fonts ];
+#pkgs.element-desktop-wayland pkgs.chromium pkgs.alsa-utils ];
 
   packagesSysroot = runCommand "packages-sysroot" {
     nativeBuildInputs = [ xorg.lndir ];
